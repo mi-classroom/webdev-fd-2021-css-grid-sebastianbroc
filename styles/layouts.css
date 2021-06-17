@@ -20,7 +20,9 @@
 ###########################################################################  */
 
 .card{
+  /*
   width: clamp(300px, 50%, 800px);
+  */
   background-color: var(--lightest);
   border-radius: var(--radius-m);
   overflow: hidden;
@@ -29,4 +31,13 @@
 
 .card figcaption{
   padding: var(--l) var(--m) var(--xl) var(--m);
+}
+
+.overview{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 2vw;
+  column-gap: 2vw;
+
+  margin-right: 20px;
 }
